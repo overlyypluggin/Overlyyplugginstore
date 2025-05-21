@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="loadCart()">
+<header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Checkout</h2>
+    <form onsubmit="event.preventDefault(); submitOrder();">
+        <label>Name:</label><br><input type="text" id="name" required><br><br>
+        <label>Email:</label><br><input type="email" id="email" required><br><br>
+        <label>Shipping Address:</label><br><textarea id="address" required></textarea><br><br>
+        <h3>Order Total: <span id="cart-total">$0.00</span></h3>
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+</body>
+</html>

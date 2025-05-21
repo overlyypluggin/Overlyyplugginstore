@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chanel Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let cart = [];
+
+        function addToCart(item) {
+            cart.push(item);
+            alert(item + " added to cart.");
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Chanel</h2>
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Wallet on Chain (WOC)">
+            <h4>Wallet on Chain (WOC)</h4>
+            <p>7.5 x 5 x 1.5 inches</p>
+            <p>$3500.0</p>
+            <button onclick="addToCart('Wallet on Chain (WOC)')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Backpack">
+            <h4>Backpack</h4>
+            <p>9.8 x 11.8 x 5.1 inches</p>
+            <p>$5800.0</p>
+            <button onclick="addToCart('Backpack')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Maxi Shopping Bag">
+            <h4>Maxi Shopping Bag</h4>
+            <p>15 x 11 x 5 inches</p>
+            <p>$5800.0</p>
+            <button onclick="addToCart('Maxi Shopping Bag')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="25 Small Handbag">
+            <h4>25 Small Handbag</h4>
+            <p>9.8 x 6.3 x 2.5 inches</p>
+            <p>$6000.0</p>
+            <button onclick="addToCart('25 Small Handbag')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="25 Medium Handbag">
+            <h4>25 Medium Handbag</h4>
+            <p>10 x 6.3 x 2.5 inches</p>
+            <p>$6400.0</p>
+            <button onclick="addToCart('25 Medium Handbag')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Boy Bag (Medium)">
+            <h4>Boy Bag (Medium)</h4>
+            <p>11 x 7 x 3 inches</p>
+            <p>$6500.0</p>
+            <button onclick="addToCart('Boy Bag (Medium)')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Small Sequin Flap Bag">
+            <h4>Small Sequin Flap Bag</h4>
+            <p>8 x 5 x 2.5 inches</p>
+            <p>$6800.0</p>
+            <button onclick="addToCart('Small Sequin Flap Bag')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="19 Bag (Large)">
+            <h4>19 Bag (Large)</h4>
+            <p>12.6 x 7.9 x 4 inches</p>
+            <p>$6900.0</p>
+            <button onclick="addToCart('19 Bag (Large)')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Sequin Flap Bag">
+            <h4>Sequin Flap Bag</h4>
+            <p>10 x 6.3 x 2.5 inches</p>
+            <p>$7200.0</p>
+            <button onclick="addToCart('Sequin Flap Bag')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Classic Flap Bag (Medium)">
+            <h4>Classic Flap Bag (Medium)</h4>
+            <p>10 x 6.3 x 2.5 inches</p>
+            <p>$10800.0</p>
+            <button onclick="addToCart('Classic Flap Bag (Medium)')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="2.55 Reissue Bag (Medium)">
+            <h4>2.55 Reissue Bag (Medium)</h4>
+            <p>10 x 6.3 x 2.5 inches</p>
+            <p>$10800.0</p>
+            <button onclick="addToCart('2.55 Reissue Bag (Medium)')">Add to Cart</button>
+        </div>
+        
+    </div>
+</div>
+<div id="cart" style="display:none;">
+    <h4>Cart (not persistent)</h4>
+    <p>Items will appear here when added.</p>
+</div>
+</body>
+</html>

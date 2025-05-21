@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="loadCart()">
+<header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Your Cart</h2>
+    <table>
+        <thead>
+            <tr><th>Item</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+    <h3>Total: <span id="cart-total">$0.00</span></h3>
+    <a href="checkout.html"><button>Proceed to Checkout</button></a>
+</div>
+</body>
+</html>

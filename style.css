@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+    color: #111;
+}
+header {
+    background: #000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 50px;
+}
+nav {
+    margin-left: auto;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.container {
+    padding: 20px;
+}
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+.brand-grid a {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #111;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.2s ease;
+}
+.brand-grid a:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.product {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #eee;
+}
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #333;
+}
+#cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: 1px solid #aaa;
+    padding: 15px;
+    max-width: 300px;
+}

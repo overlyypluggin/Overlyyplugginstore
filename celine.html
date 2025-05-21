@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Celine Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let cart = [];
+
+        function addToCart(item) {
+            cart.push(item);
+            alert(item + " added to cart.");
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Celine</h2>
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Teen Celine Lulu">
+            <h4>Teen Celine Lulu</h4>
+            <p>8 x 6 x 2.5 inches</p>
+            <p>$1850.0</p>
+            <button onclick="addToCart('Teen Celine Lulu')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Teen Celine Lulu">
+            <h4>Teen Celine Lulu</h4>
+            <p>8 x 6 x 2.5 inches</p>
+            <p>$1600.0</p>
+            <button onclick="addToCart('Teen Celine Lulu')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Large Cabas">
+            <h4>Large Cabas</h4>
+            <p>15 x 13 x 6 inches</p>
+            <p>$2450.0</p>
+            <button onclick="addToCart('Large Cabas')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Classic Panier Shopper Cabas">
+            <h4>Classic Panier Shopper Cabas</h4>
+            <p>15 x 13 x 6 inches</p>
+            <p>$2300.0</p>
+            <button onclick="addToCart('Classic Panier Shopper Cabas')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Cabas Triangle">
+            <h4>Cabas Triangle</h4>
+            <p>15 x 13 x 6 inches</p>
+            <p>$2500.0</p>
+            <button onclick="addToCart('Cabas Triangle')">Add to Cart</button>
+        </div>
+        
+    </div>
+</div>
+<div id="cart" style="display:none;">
+    <h4>Cart (not persistent)</h4>
+    <p>Items will appear here when added.</p>
+</div>
+</body>
+</html>

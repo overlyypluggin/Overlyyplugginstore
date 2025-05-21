@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YSL Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let cart = [];
+
+        function addToCart(item) {
+            cart.push(item);
+            alert(item + " added to cart.");
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#" onclick="document.getElementById('cart').style.display='block'">Cart</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>YSL</h2>
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Le 5 à 7 Small Hobo">
+            <h4>Le 5 à 7 Small Hobo</h4>
+            <p>9.1 x 6.1 x 2.4 inches</p>
+            <p>$2700.0</p>
+            <button onclick="addToCart('Le 5 à 7 Small Hobo')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Le 5 à 7 Large Hobo">
+            <h4>Le 5 à 7 Large Hobo</h4>
+            <p>12.5 x 7.5 x 2.4 inches</p>
+            <p>$3100.0</p>
+            <button onclick="addToCart('Le 5 à 7 Large Hobo')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Oxalis Monogram Shoulder Bag">
+            <h4>Oxalis Monogram Shoulder Bag</h4>
+            <p>8.6 x 6.2 x 2.3 inches</p>
+            <p>$2400.0</p>
+            <button onclick="addToCart('Oxalis Monogram Shoulder Bag')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Monogram Large Wallet on Chain">
+            <h4>Monogram Large Wallet on Chain</h4>
+            <p>8.8 x 5.5 x 1.8 inches</p>
+            <p>$1600.0</p>
+            <button onclick="addToCart('Monogram Large Wallet on Chain')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250x180.png?text=Product" alt="Loulou Mini Chain Crossbody Bag">
+            <h4>Loulou Mini Chain Crossbody Bag</h4>
+            <p>7 x 5 x 2.5 inches</p>
+            <p>$2000.0</p>
+            <button onclick="addToCart('Loulou Mini Chain Crossbody Bag')">Add to Cart</button>
+        </div>
+        
+    </div>
+</div>
+<div id="cart" style="display:none;">
+    <h4>Cart (not persistent)</h4>
+    <p>Items will appear here when added.</p>
+</div>
+</body>
+</html>
